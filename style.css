@@ -1,0 +1,40 @@
+body {
+    box-sizing: content-box;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead {
+    background: rgb(199, 199, 199);
+}
+
+.content {
+    border: 2px dotted green;
+}
+
+td {
+    padding: 7px;
+}
+
+.control-save {
+    display: none;
+}
+.control-delete {
+    margin-left: 5px;
+}
+
+.form_container {
+    width: 100%;
+    margin-top: 30px;
+}
+

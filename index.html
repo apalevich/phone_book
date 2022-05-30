@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Phone book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table class="table" id="table">
+            <colgroup>
+                <col span="2" class="content">
+                <col class="controls">
+            </colgroup>
+            <thead class="thead">
+                <tr>
+                    <td>Name</td>
+                    <td>Phone</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem Ipsum</td>
+                    <td>+1 234 555 66 77</td>
+                    <td>
+                        <span class="control-edit" id="control-edit">✏️</span>
+                        <span class="control-save" id="control-save">👌</span>
+                        <span class="control-delete" id="control-delete">❌</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem Ipsum</td>
+                    <td>+1 234 555 66 77</td>
+                    <td>
+                        <span class="control-edit" id="control-edit">✏️</span>
+                        <span class="control-save" id="control-save">👌</span>
+                        <span class="control-delete" id="control-delete">❌</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem Ipsum</td>
+                    <td>+1 234 555 66 77</td>
+                    <td>
+                        <span class="control-edit" id="control-edit">✏️</span>
+                        <span class="control-save" id="control-save">👌</span>
+                        <span class="control-delete" id="control-delete">❌</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem Ipsum</td>
+                    <td>+1 234 555 66 77</td>
+                    <td>
+                        <span class="control-edit" id="control-edit">✏️</span>
+                        <span class="control-save" id="control-save">👌</span>
+                        <span class="control-delete" id="control-delete">❌</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem Ipsum</td>
+                    <td>+1 234 555 66 77</td>
+                    <td>
+                        <span class="control-edit" id="control-edit">✏️</span>
+                        <span class="control-save" id="control-save">👌</span>
+                        <span class="control-delete" id="control-delete">❌</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form_container">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" pattern="" required>
+                <label for="Phone">Phone:</label>
+                <input type="text" name="phone" id="phone" required>
+                <button disabled class="button-submit" id="button-submit">Добавить</button>
+            </form>
+            <div class="status-message" id="status-message"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
