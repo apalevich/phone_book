@@ -21,59 +21,51 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td>Lorem Ipsum</td>
                     <td>+1 234 555 66 77</td>
                     <td>
-                        <span class="control-edit" id="control-edit">✏️</span>
-                        <span class="control-save" id="control-save">👌</span>
-                        <span class="control-delete" id="control-delete">❌</span>
+                        <span class="control-edit" id="control-edit" onclick="toggleRow">✏️</span>
+                        <span class="control-save" id="control-save" onclick="toggleRow">👌</span>
+                        <span class="control-delete" id="control-delete" onclick="deleteRow">❌</span>
                     </td>
                 </tr>
                 <tr>
                     <td>Lorem Ipsum</td>
                     <td>+1 234 555 66 77</td>
                     <td>
-                        <span class="control-edit" id="control-edit">✏️</span>
-                        <span class="control-save" id="control-save">👌</span>
-                        <span class="control-delete" id="control-delete">❌</span>
+                        <span class="control-edit" id="control-edit" onclick="toggleRow">✏️</span>
+                        <span class="control-save" id="control-save" onclick="toggleRow">👌</span>
+                        <span class="control-delete" id="control-delete" onclick="deleteRow">❌</span>
                     </td>
                 </tr>
                 <tr>
                     <td>Lorem Ipsum</td>
                     <td>+1 234 555 66 77</td>
                     <td>
-                        <span class="control-edit" id="control-edit">✏️</span>
-                        <span class="control-save" id="control-save">👌</span>
-                        <span class="control-delete" id="control-delete">❌</span>
+                        <span class="control-edit" id="control-edit" onclick="toggleRow">✏️</span>
+                        <span class="control-save" id="control-save" onclick="toggleRow">👌</span>
+                        <span class="control-delete" id="control-delete" onclick="deleteRow">❌</span>
                     </td>
-                </tr>
-                <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>+1 234 555 66 77</td>
-                    <td>
-                        <span class="control-edit" id="control-edit">✏️</span>
-                        <span class="control-save" id="control-save">👌</span>
-                        <span class="control-delete" id="control-delete">❌</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>+1 234 555 66 77</td>
-                    <td>
-                        <span class="control-edit" id="control-edit">✏️</span>
-                        <span class="control-save" id="control-save">👌</span>
-                        <span class="control-delete" id="control-delete">❌</span>
-                    </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
         <div class="form_container">
             <form action="" id="add-item">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name" pattern="" required>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    pattern="\w+"
+                    required >
                 <label for="Phone">Phone:</label>
-                <input type="text" name="phone" id="phone" required>
+                <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    pattern="^[+]*[0-9\-]+$"
+                    required >
                 <button disabled class="button-submit" id="button-submit">Добавить</button>
             </form>
             <div class="status-message" id="status-message"></div>
